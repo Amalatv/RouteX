@@ -15,12 +15,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"/>
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
@@ -37,6 +39,12 @@
             <img src="images/OBJECTS.png" alt="logo_image" />
             <div class="logo_header">RouteX</div>
           </div>
+
+          <input type="checkbox" id="checking">
+          <label for="checking" class="check-bar">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+
           <div class="nav_bar">
             <ul>
               <li>
@@ -67,6 +75,11 @@
               <div class="logo_num pt-2">(307) 555-0133</div>
             </div>
           </div>
+
+          <!-- <input type="checkbox" id="checking">
+          <label for="checking">
+              <i class="fa-solid fa-bars check-bar"></i>
+          </label> -->
         </div>
       </div>
     </header>
@@ -96,25 +109,41 @@
     <!-- ABOUT SECTION -->
 
     <section>
-      <div class="main_section main_section_about">
-        <div class="main_section_img">
-          <img class="large_img" src="images/about-big-img.png" />
-          <img class="smal_img" src="images/about-small-img.png" />
-          <img class="dotted_img" src="images/dotted-img.svg" />
-          <img class="medium_img" src="images/about-medium-img.png" />
-          <div class="img_content">
-            <h1>10+</h1>
-            <p>
-              Years Of <br />
-              Experince
-            </p>
+      <div class="col-sm-12 block main_section main_section_about">
+        <div class="col-xl-6">
+          <div class="main_section_img ">
+            <div class="main_section_img_box d-flex">
+              <div>
+                <img class="large_img" src="images/about-big-img.png" alt="image not found"/>
+              </div>
+              <div class="img_box_small">
+                <img class="small_img" src="images/about-small-img.png" alt="image not found"/>
+              </div>
+            </div>
+
+            <div class="main_section_img_box  d-flex">
+              <div class="img_content">
+                <h1>10<span>+</span></h1>
+                <p>
+                Years Of <br>
+                Experince
+                </p>
+              </div>
+              <div class="medium_img_box">
+                <img class="medium_img" src="images/about-medium-img.png" alt="image not found"/>
+              </div>
+              <div class="dotted-img_box main_section_img_boxB">
+                <img class="dotted_img" src="images/dotted-img.svg" alt="image not found"/>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="main_section_content">
+        <div class="section_space_gap main_section_content">
           <h6>ABOUT US</h6>
-          <h2>Unknown Wanderlust <br />Your Journey into</h2>
+          <h2>Unknown Wanderlust our Journey into</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed sit amet
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed sit
+            amet<br />
             rcus nunc. Duis egestas ac ante sed tincidunt.
           </p>
 
@@ -146,11 +175,11 @@
     <!-- SERVICES SECTION -->
 
     <section class="section_cards_bg">
-      <div class="main_row section_space">
+      <div class="block main_row section_space">
         <div class="row_img"></div>
         <div class="section_space_gap">
           <div
-            class="d-flex align-items-center justify-content-between main_section_space"
+            class="main_section_cards d-flex  justify-content-between main_section_space"
           >
             <div class="main_section_content">
               <h6>Our Services</h6>
@@ -194,7 +223,7 @@
               </p>
             </div>
 
-            <div class="section_cards main_section_content">
+            <div class="section_cards cards_last main_section_content">
               <div class="cards_icon">
                 <i class="fa-solid fa-plane-circle-check"></i>
               </div>
@@ -209,10 +238,10 @@
         </div>
       </div>
     </section>
-<!-- FOOTER SECTION -->
-    <footer>
+    <!-- FOOTER SECTION -->
+    <footer class="footer_bg">
       <div class="footer_bg">
-        <div class="footer_section footer_space section_space_gap">
+        <div class="block footer_section footer_space section_space_gap">
           <div class="footer_main_section">
             <div class="logo">
               <img src="images/OBJECTS.png" alt="logo_image" />
@@ -232,6 +261,7 @@
             </div>
           </div>
 
+          <!-- <div class="footer_submenu"> -->
           <div class="footer_list_menu">
             <h4>Service Menu</h4>
             <ul>
@@ -297,12 +327,15 @@
                 </div>
               </div>
             </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
+    </div>
 
-      <div class="footer_terms">
-        <div class="footer_section section_space_gap d-flex justify-content-between align-items-center">
+      <div class="block footer_terms">
+        <div
+          class="footer_section section_space_gap d-flex justify-content-between align-items-center"
+        >
           <div class="footer_content">
             <p><a>RRDevs</a> 2024 | All Rights Reserved</p>
           </div>
