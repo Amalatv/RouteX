@@ -255,12 +255,12 @@
      .section_space_gap {
          margin: 0 26px !important;
      }
-     .main_section_content {
+     /* .main_section_content {
          display: flex;
          flex-direction: column;
          justify-content: center;
          text-align: center;
-     }
+     } */
      .check_box_main {
       justify-content: center;
      }
