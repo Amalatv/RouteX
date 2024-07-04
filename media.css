@@ -199,6 +199,7 @@
      .medium_img {
          margin-top: 0px !important;
      }
+
      .section_space_gap {
          margin: 0 26px !important;
      }
@@ -248,6 +249,9 @@
      }
      .main_section_cards {
          text-align: center;
+     }
+     .main_section_content_abt .banner_btn {
+        display: flex;
      }
      .arrows {
          justify-content: center !important;
