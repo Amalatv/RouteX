@@ -170,6 +170,10 @@
  }
  
  @media screen and (max-width: 600px) {
+
+    #checking:checked ~ .nav_bar ul{
+    padding-top: 80px !important;
+    }
      .nav_bar ul {
          gap: 0px;
      }
